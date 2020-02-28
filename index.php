@@ -55,9 +55,9 @@
                     } else{
                         echo "Geen . gevonden";} ?> </li>
                 <li>Zoek naar substring <strong>"PHP"</strong> vervang dit door <strong>"NodeJS"</strong> <?php echo str_replace("PHP","NodeJS",$string3); ?>  </li>
-                <li>Wijzig de eerste letter van string 3 naar hoofdletter: <?php echo strtoupper(substr($string3, 0, 3)) . substr($string3, 3); ?> </li>
+                <li>Wijzig de eerste letter van string 3 naar hoofdletter: <?php echo ucfirst($string3)?> </li>
                 <li>Alles in hoofdletters: <?php echo strtoupper($string3); ?>  </li>
-                <li>Is dat een valiede email (Eerste veld)?
+                <li>Is dat een valiede email (String 1)?
                     <?php
                     if (filter_var($input1, FILTER_VALIDATE_EMAIL)){
                         echo("<b>Ja</b>");}
