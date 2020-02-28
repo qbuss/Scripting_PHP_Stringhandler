@@ -31,9 +31,6 @@
 			 </fieldset>
 			</form>
 			<hr>
-			<?php
-            ltrim()
-			?>
             <ul>
                 <li class="showSpaces">Ingevoerde string 1:  <?php  echo $input1;?> </li>
                 <li class="showSpaces">Ingevoerde string 2:  <?php  echo $input2;?> </li>
@@ -60,7 +57,7 @@
                 <li>Zoek naar substring <strong>"PHP"</strong> vervang dit door <strong>"NodeJS"</strong> <?php echo str_replace("PHP","NodeJS",$string3); ?>  </li>
                 <li>Wijzig de eerste letter van string 3 naar hoofdletter: <?php echo strtoupper(substr($string3, 0, 3)) . substr($string3, 3); ?> </li>
                 <li>Alles in hoofdletters: <?php echo strtoupper($string3); ?>  </li>
-                <li>Is dat een valiede email?
+                <li>Is dat een valiede email (Eerste veld)?
                     <?php
                     if (filter_var($input1, FILTER_VALIDATE_EMAIL)){
                         echo("<b>Ja</b>");}
